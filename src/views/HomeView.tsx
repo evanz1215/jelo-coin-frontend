@@ -155,11 +155,17 @@ const HomeView: FC = () => {
               </h3>
               <div className="flex items-center justify-center space-x-4">
                 <p className="text-lg text-cyan-50 font-mono">
-                  0x12342476127421487126248174785678
+                  <a href="https://suiscan.xyz/devnet/coin/0x3dae3199f692245eb025a7b30a08cfe54757d249edd672673f81e7804f8aef9e::jelo::JELO/txs">
+                    0x3dae...ef9e::jelo::JELO
+                  </a>
                 </p>
                 <button
                   className="bg-cyan-500/20 hover:bg-cyan-500/30 p-2 rounded-lg transition-all"
-                  onClick={() => navigator.clipboard.writeText("0x1234...5678")}
+                  onClick={() =>
+                    navigator.clipboard.writeText(
+                      "0x3dae3199f692245eb025a7b30a08cfe54757d249edd672673f81e7804f8aef9e::jelo::JELO"
+                    )
+                  }
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
